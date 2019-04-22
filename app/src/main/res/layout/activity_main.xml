@@ -4,15 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7C616768"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/resultTextView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="136dp"
+        android:background="#4CAF50"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="C"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/firstNumTextView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="56dp"
+        android:background="#2196F3"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="A"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/operatorTextView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:background="#FF9800"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="+"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toStartOf="@+id/secondNumTextView"
+        app:layout_constraintStart_toEndOf="@+id/firstNumTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:background="#AEB1B2"
+        android:gravity="center"
+        android:text="="
+        android:textSize="75sp"
+        app:layout_constraintBottom_toTopOf="@+id/resultTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/secondNumTextView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="56dp"
+        android:background="#2196F3"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="B"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="GO!"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>
